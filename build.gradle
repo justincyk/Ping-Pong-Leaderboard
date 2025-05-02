@@ -64,17 +64,25 @@ tasks.register("copyFrontend", Copy) {
     }
 }
 
+tasks.named('build') {
+    dependsOn 'copyFrontend'
+}
+
+tasks.named("compileTestJava") {
+    dependsOn("copyFrontend")
+}
+
 // region configure Spring's bootRun dependency chain
 resolveMainClassName {
     dependsOn copyFrontend
 }
 
 bootJar {
-    enabled = false
+    enabled = true
 }
 
 jar {
-    enabled = true
+    enabled = false
 }
 
 bootRun {

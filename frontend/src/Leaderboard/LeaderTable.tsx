@@ -11,8 +11,6 @@ import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import LeaderRow from "./LeaderRow.tsx";
 
-// import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
-
 interface LeaderListProps {
   users: User[];
 }
@@ -56,7 +54,7 @@ const LeaderTable = ({ users }: LeaderListProps) => {
   };
 
   const handleChangeRowsPerPage = (
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
@@ -75,7 +73,7 @@ const LeaderTable = ({ users }: LeaderListProps) => {
       }}
     >
       <Paper sx={{ width: "61%", border: 3 }}>
-        <TableContainer sx={{ maxHeight: "68vh" }}>
+        <TableContainer sx={{ maxHeight: "65vh" }}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
               <TableRow>
