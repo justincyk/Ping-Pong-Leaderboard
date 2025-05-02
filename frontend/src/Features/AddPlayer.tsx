@@ -293,7 +293,7 @@ const AddPlayer = ({
                 color: "yellow",
               }}
             >
-              New players need at least 5 matches to be displayed on the
+              New players need at least 2 matches to be displayed on the
               Leaderboard
             </div>
           </div>

@@ -52,7 +52,7 @@ const AddMatch = ({
   const [nicknames, setNicknames] = useState<String[]>(
     users.map((user) => {
       return user.nickname;
-    }),
+    })
   );
 
   useEffect(() => {
@@ -63,7 +63,7 @@ const AddMatch = ({
     setNicknames(
       users.map((user) => {
         return user.nickname;
-      }),
+      })
     );
   };
 
@@ -193,20 +193,7 @@ const AddMatch = ({
             >
               Winner
             </label>
-            {/*<input*/}
-            {/*  type="text"*/}
-            {/*  name="winner"*/}
-            {/*  placeholder="Enter Winner"*/}
-            {/*  onChange={handleChange}*/}
-            {/*  style={{*/}
-            {/*    width: "100%",*/}
-            {/*    fontSize: "1.5vw",*/}
-            {/*    border: "none",*/}
-            {/*    borderRadius: "8px",*/}
-            {/*    height: "4.5vh",*/}
-            {/*    fontFamily: "AtariFontSmooth",*/}
-            {/*  }}*/}
-            {/*/>*/}
+
             <Autocomplete
               id="winner"
               freeSolo
@@ -251,20 +238,6 @@ const AddMatch = ({
             >
               Loser
             </label>
-            {/*<input*/}
-            {/*  type="text"*/}
-            {/*  name="loser"*/}
-            {/*  placeholder="Enter Loser"*/}
-            {/*  onChange={handleChange}*/}
-            {/*  style={{*/}
-            {/*    width: "100%",*/}
-            {/*    fontSize: "1.5vw",*/}
-            {/*    border: "none",*/}
-            {/*    borderRadius: "8px",*/}
-            {/*    height: "4.5vh",*/}
-            {/*    fontFamily: "AtariFontSmooth",*/}
-            {/*  }}*/}
-            {/*/>*/}
             <Autocomplete
               id="loser"
               freeSolo
@@ -301,7 +274,6 @@ const AddMatch = ({
               sx={{
                 fontSize: "1.9vw",
                 fontFamily: "AtariFontExtraSmooth",
-                // color: "yellow",
                 color: "white",
               }}
               variant={"outlined"}
@@ -315,7 +287,6 @@ const AddMatch = ({
               sx={{
                 fontSize: "1.9vw",
                 fontFamily: "AtariFontExtraSmooth",
-                // color: "yellow",
                 color: "white",
               }}
               variant={"outlined"}

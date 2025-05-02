@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import ImageIcon from "@mui/icons-material/Image";
 import { User } from "../User/User.ts";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
